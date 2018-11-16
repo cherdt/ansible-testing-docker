@@ -1,7 +1,7 @@
 FROM centos:centos7
 
 RUN yum -y install \
-        epel-release centos-release-scl centos-release-scl-rh \
+        epel-release @Base \
         dbus libselinux-python python2-devel git python-setuptools python-setuptools-dev openssl-devel gcc \
         sudo openssh-server openssh-clients which curl htop \
         && easy_install pip \
